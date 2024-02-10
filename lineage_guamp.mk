@@ -27,3 +27,14 @@ BUILD_FINGERPRINT := "motorola/guamp_retail/guamp:11/RPXS31.Q2-58-17-7-3/ad9c24:
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=guamp_retail \
     PRIVATE_BUILD_DESC="guamp_retail-user 11 RPXS31.Q2-58-17-7-3 ad9c24 release-keys"
+
+# Gapps
+WITH_GMS := true
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+endif
+
+# Crdroid flags
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := false
