@@ -162,6 +162,10 @@ vendor/lib64/libgoodix.sensortest.hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+vendor/usr/idc/uinput-fpc.idc
+vendor/usr/idc/uinput_nav.idc
+vendor/usr/keylayout/uinput-fpc.kl
+vendor/usr/keylayout/uinput_nav.kl
 
 # Graphics firmware
 vendor/firmware/a630_sqe.fw
